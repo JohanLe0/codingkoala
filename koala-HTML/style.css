@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: fit-content;
+    height: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 10px 20px 20px 20px;
@@ -12,8 +12,9 @@ body {
     scrollbar-width: none;
 }
 
-::-webkit-scrollbar {
-    width: 0;
+.js-button a {
+    text-decoration: none;
+    color: #FAE226;
 }
 
 .css-button a {
@@ -21,9 +22,8 @@ body {
     color: #54B7FF;
 }
 
-.html-button a {
-    text-decoration: none;
-    color: #ff7329;
+::-webkit-scrollbar {
+    width: 0;
 }
 
 .nav-container {
@@ -49,8 +49,14 @@ body {
     width: 100%;
     height: 5px;
     border-radius: 1000px;
-    background-image: linear-gradient(to right, #FAE226, #FA6226);
+    background-image: linear-gradient(to right, #c22000, #ff7329);
     top: 50%;
+}
+
+img[alt="CSS logo"] {
+    margin-top: 15px;
+    height: 30px;
+    width: auto;
 }
 
 .hamburger-button span:nth-child(1) {
@@ -61,10 +67,9 @@ body {
     top: 25%;
 }
 
-img[alt="JavaScript abbreviation logo JS"] {
-    max-height: 30px;
-    width: auto;
-    margin-top: 15px
+.nav-container img {
+    max-height: 50px;
+    max-width: auto;
 }
 
 .off-screen-menu {
@@ -78,7 +83,7 @@ img[alt="JavaScript abbreviation logo JS"] {
     border-radius: 25px;
     z-index: 5;
     background-image: linear-gradient(135deg, #141414, #3D3D3D);
-    border: 3px solid #FAE226;
+    border: 3px solid #ff7329;
     opacity: 0;
     top: -100vh;
     transition: .2s ease;
@@ -100,6 +105,7 @@ ul {
     font-size: 20px;
     font-weight: 700;
     color: #7e7e7e;
+
 }
 
 li {
@@ -164,6 +170,7 @@ img[alt="wrong answer cross illustration"] {
     background-image: linear-gradient(135deg, #141414, #3D3D3D);
     border-radius: 25px;
     position: relative;
+    align-self: center;
 }
 
 .game-window-border {
@@ -173,7 +180,7 @@ img[alt="wrong answer cross illustration"] {
     height: 101%;
     width: 101%;
     border-radius: 28px;
-    background-image: linear-gradient(-45deg, #FA6226, #FAE226, #FA6226);
+    background-image: linear-gradient(-45deg, #c22000, #ff7329, #c22000);
     z-index: -1;
 }
 
@@ -220,4 +227,5 @@ img[alt="wrong answer cross illustration"] {
     .game-window {
         max-width: 90%;
     }
+
 }

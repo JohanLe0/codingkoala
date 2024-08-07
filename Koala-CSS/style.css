@@ -12,9 +12,14 @@ body {
     scrollbar-width: none;
 }
 
-a {
+.js-button a {
     text-decoration: none;
     color: #FAE226;
+}
+
+.html-button a {
+    text-decoration: none;
+    color: #ff7329;
 }
 
 ::-webkit-scrollbar {
